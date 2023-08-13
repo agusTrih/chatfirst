@@ -19,13 +19,13 @@ export default function RootLayout({
 		<html lang='en' suppressHydrationWarning>
 			<head />
 			<body className='min-h-screen bg-white'>
-				<header className='flex justify-between items-center py-2 px-6 border-b border-gray-200 text-black'>
+				<header className='flex justify-between items-center py-2 px-2 lg:px-6 border-b border-gray-200 text-black'>
 					<div className='flex flex-col'>
 						<div>
 							<img
 								src='https://i.ibb.co/y0m2cHQ/Blue-Minimalist-Chat-Bubble-Logo.png'
 								alt='Logo'
-								className=' w-14 h-auto'
+								className='lg:w-14 w-10 h-auto'
 							/>
 						</div>
 						<strong className='hidden lg:block'> ChatFirst</strong>

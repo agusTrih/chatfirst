@@ -121,7 +121,7 @@ const FormWhattsap: FC<FormWhattsapProps> = () => {
 							Preview
 						</Button>
 					</DialogTrigger>
-					<DialogContent>
+					<DialogContent className='max-w-sm  mx-auto rounded-sm px-4'>
 						<DialogHeader>
 							<DialogTitle>Preview Message</DialogTitle>
 						</DialogHeader>
