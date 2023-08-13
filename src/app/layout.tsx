@@ -18,13 +18,34 @@ export default function RootLayout({
 	return (
 		<html lang='en' suppressHydrationWarning>
 			<head />
-			<body className='min-h-screen'>
+			<body className='min-h-screen bg-white'>
+				<header className='flex justify-between items-center py-2 px-6 border-b border-gray-200 text-black'>
+					<div className='flex flex-col'>
+						<div>
+							<img
+								src='https://i.ibb.co/y0m2cHQ/Blue-Minimalist-Chat-Bubble-Logo.png'
+								alt='Logo'
+								className=' w-14 h-auto'
+							/>
+						</div>
+						<strong> ChatFirst</strong>
+					</div>
+					<nav>
+						<ul className='flex space-x-4'>
+							<li>
+								<a href='#aboutme' className='hover:text-green-500'>
+									About Me
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</header>
 				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
 					{children}
 				</ThemeProvider>
-				<div className='border-t text-sm text-gray-500 py-4 border-gray-300 text-center'>
+				<footer className='border-t text-sm text-gray-500 py-4 border-gray-300 text-center'>
 					© 2023. codewithagus. All rights reserved
-				</div>
+				</footer>
 			</body>
 		</html>
 	)

@@ -66,7 +66,7 @@ const FormWhattsap: FC<FormWhattsapProps> = () => {
 		<Form {...form}>
 			<form
 				onSubmit={form.handleSubmit(onSubmit)}
-				className='space-y-8 p-4 rounded-md bg-white '
+				className='space-y-8 p-4 rounded-md bg-white shadow-lg '
 			>
 				<FormField
 					control={form.control}

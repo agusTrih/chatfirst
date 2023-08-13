@@ -15,23 +15,17 @@ export const metadata: Metadata = {
 }
 export default function Home() {
 	return (
-		<>
-			<div className='bg-gradient-to-r from-blue-600 via-green-500 to-green-900 text-white py-20 px-6 text-center relative'>
-				<img
-					src='https://i.ibb.co/GxdTHVG/5138237.jpg'
-					alt='Gambar jumbotron'
-					className='absolute top-0 bottom-0 left-0 w-1/2 h-full object-cover opacity-50'
-				/>
-
+		<div className='max-w-screen-lg mx-auto  px-4 mt-10'>
+			<div className='text-black bg-white py-20 px-6 text-center relative border-black border-2 rounded-2xl shadow-sm shadow-green-600'>
 				<div className='relative z-10 max-w-4xl mx-auto'>
 					<h1 className='text-4xl font-bold mb-5 leading-[3rem]'>
 						Selamat Datang di{" "}
-						<strong className='text-primary bg-white px-2 rounded-sm mt-2'>
+						<strong className='text-primary  border-b-2  border-green-500 px-2  mt-2'>
 							ChatFirst!
 						</strong>
 					</h1>
 					<p className='text-lg'>
-						<strong className='text-primary bg-white px-2 rounded-sm mr-2'>
+						<strong className='text-black bg-green-300 px-2 rounded-sm mr-2'>
 							Chat dulu, save kemudian!
 						</strong>
 						Nikmati kemudahan berkomunikasi lewat WhatsApp tanpa perlu repot
@@ -42,10 +36,9 @@ export default function Home() {
 					</p>
 				</div>
 			</div>
-
 			<main className='lg:max-w-lg px-4 mx-auto my-10'>
 				<SectionContent />
 			</main>
-		</>
+		</div>
 	)
 }
