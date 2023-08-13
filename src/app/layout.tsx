@@ -22,6 +22,9 @@ export default function RootLayout({
 				<ThemeProvider attribute='class' defaultTheme='system' enableSystem>
 					{children}
 				</ThemeProvider>
+				<div className='border-t text-sm text-gray-500 py-4 border-gray-300 text-center'>
+					© 2023. codewithagus. All rights reserved
+				</div>
 			</body>
 		</html>
 	)

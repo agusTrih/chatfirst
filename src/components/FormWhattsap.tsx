@@ -30,12 +30,8 @@ import {
 import PreviewWhattsap from "./PreviewWhattsap"
 
 const formSchema = z.object({
-	messageWhattsap: z.string().min(2, {
-		message: "messageWhattsap must be at least 2 characters.",
-	}),
-	phone: z.string().min(2, {
-		message: "phone.",
-	}),
+	messageWhattsap: z.string(),
+	phone: z.string().nonempty("Phone Number Wajib di isi"),
 })
 interface FormWhattsapProps {}
 
@@ -127,7 +123,7 @@ const FormWhattsap: FC<FormWhattsapProps> = () => {
 					</DialogTrigger>
 					<DialogContent>
 						<DialogHeader>
-							<DialogTitle>Are you sure absolutely sure?</DialogTitle>
+							<DialogTitle>Preview Message</DialogTitle>
 						</DialogHeader>
 
 						<PreviewWhattsap values={form.getValues()} />

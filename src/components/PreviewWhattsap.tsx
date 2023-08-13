@@ -17,7 +17,7 @@ const PreviewWhattsap: FC<PreviewWhattsapProps> = ({ values }) => {
 
 				<div className='flex flex-col h-full'>
 					<div className='p-3 bg-green-500 text-white flex items-center justify-between'>
-						<h4 className='font-bold'>{values.phone}</h4>
+						<h4 className='font-bold'>{values?.phone || "XXX-XXXX-XXXX"}</h4>
 						<div>
 							<img
 								className='h-5'
@@ -30,7 +30,7 @@ const PreviewWhattsap: FC<PreviewWhattsapProps> = ({ values }) => {
 					<div className='mt-auto'>
 						<div className='flex items-end justify-end p-3'>
 							<p className='text-sm bg-[#DCF8C6] text-black px-3 py-2 rounded-lg mx-2'>
-								{values.messageWhattsap}
+								{values?.messageWhattsap || "..."}
 							</p>
 						</div>
 
