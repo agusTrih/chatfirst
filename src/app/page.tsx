@@ -26,16 +26,7 @@ export default function Home() {
 					</p>
 				</div>
 			</div>
-			{/* <ThemeToogle /> */}
-			{/* section */}
-			{/* <Benefits /> */}
-			{/* cta */}
-			{/* <div className='text-center py-16'>
-				<button className='bg-blue-600 text-white py-3 px-10 rounded hover:bg-blue-700 mb-5'>
-					Buka Editor
-				</button>
-				<p>Mulai chat sekarang.</p>
-			</div> */}
+
 			<main className='lg:max-w-lg px-4 mx-auto my-5'>
 				<SectionContent />
 			</main>
