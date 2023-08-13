@@ -28,7 +28,7 @@ export default function RootLayout({
 								className=' w-14 h-auto'
 							/>
 						</div>
-						<strong> ChatFirst</strong>
+						<strong className='hidden lg:block'> ChatFirst</strong>
 					</div>
 					<nav>
 						<ul className='flex space-x-4'>

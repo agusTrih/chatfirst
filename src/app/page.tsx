@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<div className='max-w-screen-lg mx-auto  px-4 mt-10'>
-			<div className='text-black bg-white py-20 px-6 text-center relative border-black border-2 rounded-2xl shadow-sm shadow-green-600'>
+			<div className='text-black bg-white py-20 px-2 lg:px-6 text-center relative border-black border-2 rounded-2xl shadow-sm shadow-green-600'>
 				<div className='relative z-10 max-w-4xl mx-auto'>
 					<h1 className='text-4xl font-bold mb-5 leading-[3rem]'>
 						Selamat Datang di{" "}
@@ -37,6 +37,13 @@ export default function Home() {
 				</div>
 			</div>
 			<main className='lg:max-w-lg px-4 mx-auto my-10'>
+				<h2 className='text-2xl font-bold mb-2 text-center'>
+					Mulai Percakapan Anda Sekarang
+				</h2>
+				<p className='mb-4 text-gray-500 text-center'>
+					Isi form di bawah ini dengan nomor whatsApp tujuan Anda
+				</p>
+
 				<SectionContent />
 			</main>
 		</div>

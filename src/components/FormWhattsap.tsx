@@ -130,7 +130,7 @@ const FormWhattsap: FC<FormWhattsapProps> = () => {
 					</DialogContent>
 				</Dialog>
 
-				<div className='text-center'> -or- </div>
+				<div className='text-center text-gray-500'> -or- </div>
 				<Button type='submit' className='w-full'>
 					Kirim Pesan
 				</Button>
